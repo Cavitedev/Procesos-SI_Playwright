@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npm run testFull -- --project=chromium",
+    "testFull": "npx playwright test tests/barcos.spec.js",
+    "codegen": "npx playwright codegen localhost:3000"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
