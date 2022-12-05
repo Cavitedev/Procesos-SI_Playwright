@@ -97,4 +97,7 @@ test("test", async ({ browser }) => {
   await pepePage
     .locator("div:nth-child(2) > .grid > div:nth-child(56)")
     .click();
+
+  await pepePage.getByRole("button", { name: "Cerrar Sesión" }).click();
+  await juanPage.getByRole("button", { name: "Cerrar Sesión" }).click();
 });
